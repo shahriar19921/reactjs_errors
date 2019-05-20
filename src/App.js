@@ -2,8 +2,19 @@ import React,{Component} from 'react';
 import Header from './components/shared/Header/header.component';
 import Footer from './components/shared/Footer/footer.component';
 import Login from './components/Login/login.component';
+import { Link, withRouter } from "react-router-dom";
+
 
 class App extends Component{
+
+    handleLogout = async event => {
+        await Auth.signOut();
+      
+        this.userHasAuthenticated(false);
+      
+        this.props.history.push('./components/Login/login.component.js');
+      }
+      
   render(){
     return(
       <div className="container">
@@ -31,4 +42,6 @@ class App extends Component{
 
 
 
-export default App;
+export default withRouter(App);
+
+

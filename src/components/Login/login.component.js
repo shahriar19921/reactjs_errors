@@ -18,13 +18,13 @@ class Login extends Component{
 
     handleSubmit(e){
         e.preventDefault();
-        // try {
-        //     await Auth.signIn(this.state.dataUsername, this.state.dataPassword);
-        //     this.props.userHasAuthenticated(true);
-        //     this.props.history.push("/");
-        //   } catch (e) {
-        //     alert(e.message);
-        //   }
+        try {
+            await Auth.signIn(this.state.dataUsername, this.state.dataPassword);
+            this.props.userHasAuthenticated(true);
+            this.props.history.push('../Dashboard/home.component.js');
+          } catch (e) {
+            alert(e.message);
+          }
 
           
         const{dataUsername,dataPassword} =this.state;
