@@ -1,2 +1,14 @@
-npm i
-npm start
+# React Js Practice
+
+Testing the React Js Library for the first Time.
+
+## Installation
+
+A JavaScript library for building user interfaces
+
+```bash
+https://reactjs.org/docs/getting-started.html
+```
+
+## License
+[React](https://opensource.fb.com/legal/terms/)
