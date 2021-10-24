@@ -6,9 +6,8 @@ Testing the React Js Library for the first Time.
 
 A JavaScript library for building user interfaces
 
-```bash
+Link:
 https://reactjs.org/docs/getting-started.html
-```
 
 ## License
 [React](https://opensource.fb.com/legal/terms/)
